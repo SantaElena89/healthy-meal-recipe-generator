@@ -1,12 +1,25 @@
-function getRecipe(event) {
-  event.preventDefault();
-
+function showRecipe(response) {
   new Typewriter("#recipe-result", {
-    strings: "Here's your recipe!🍲",
+    strings: "🍲 Here's your recipe:" + response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
+}
+
+function getRecipe(event) {
+  event.preventDefault();
+
+  let instructionsInput = document.querySelector(".instructions");
+  let apiKey = "fobd5f34d0a71b340a77389t18db1bc0";
+  let context =
+    "You are a world class chef that creates delicious healthy recipes with any ingredients. Create it in a step by step format in basic HTML. Don't say it's in HTML in the text";
+  let prompt = `Create a recipe with the following ingredients ${instructionsInput.value}`;
+  instructionsInput.value = "";
+
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiURL).then(showRecipe);
 }
 
 let recipeFormElement = document.getElementById("recipe-form");
