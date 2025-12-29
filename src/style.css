@@ -69,6 +69,10 @@ form {
   border-left: 6px solid darkgreen;
 }
 
+.recipe strong {
+  color: darkgreen;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;

@@ -13,7 +13,7 @@ function getRecipe(event) {
   let instructionsInput = document.querySelector(".instructions");
   let apiKey = "fobd5f34d0a71b340a77389t18db1bc0";
   let context =
-    "You are a world class chef that creates delicious healthy recipes with any ingredients. Create it in a step by step format in basic HTML. Don't say it's in HTML in the text";
+    "You are a world class chef that creates delicious healthy recipes with any ingredients. Create it in a step by step format in basic HTML. Don't say it's in HTML in the text. Sign it at the bottom `Your SheCodes AI` in a <strong> format";
   let prompt = `Create a recipe with the following ingredients ${instructionsInput.value}`;
   instructionsInput.value = "";
 
