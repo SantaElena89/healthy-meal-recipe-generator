@@ -9,25 +9,27 @@
 </head>
 
 <body>
-    <header>
-        <h1>AI Healthy Meal Recipe Generator</h1>
-    </header>
-    <main>
-        <form id="recipe-form">
-            <input type="text" placeholder="Enter the main ingredient you'd like to use for the recipe..." autofocus
-                required autocomplete="off" />
+    <div class="container">
+        <header>
+            <h1>AI Healthy Meal Recipe Generator</h1>
+        </header>
+        <main>
+            <form id="recipe-form">
+                <input type="text" placeholder="Enter the main ingredient(-s)..." autofocus required autocomplete="off"
+                    class="instructions" />
 
-            <input type="submit" value="Get Recipe" />
-        </form>
-        <br />
-        <div id="recipe-result">Here's the recipe:</div>
-        <br />
-    </main>
-    <footer>
-        This AI project is coded by <a href="https://github.com/SantaElena89" target="_blank">Elena Sozontova</a> and is
-        open-sourced <a href="https://github.com/SantaElena89/healthy-meal-recipe-generator.git" target="_blank">on
-            GitHub</a> and hosted <a href="https://ai-healthy-meal-recipe-generator.netlify.app/" target="_blank">on
-            Netlify</a> </footer>
+                <input class="submit-button" type="submit" value="Get Recipe" />
+            </form>
+            <div class="recipe" id="recipe-result">Here's the recipe:</div>
+            <br />
+        </main>
+        <footer>
+            This AI project is coded by <a href="https://github.com/SantaElena89" target="_blank">Elena Sozontova</a>
+            and is
+            open-sourced <a href="https://github.com/SantaElena89/healthy-meal-recipe-generator.git" target="_blank">on
+                GitHub</a> and hosted <a href="https://ai-healthy-meal-recipe-generator.netlify.app/" target="_blank">on
+                Netlify</a> </footer>
+    </div>
     <script src="src/script.js"></script>
 </body>
 

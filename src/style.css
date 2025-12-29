@@ -1,4 +1,77 @@
 body {
-  background: lightcoral;
+  background-color: rgba(172, 255, 47, 0.754);
+}
+
+a {
+  color: darkgreen;
+}
+.container {
+  margin: 120px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(210, 221, 181, 0.816);
+  border-radius: 10px;
+  border: black 0.5px solid;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+header {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: darkgreen;
+  font-family: Helvetica, sans-serif;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid lightgray;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.submit-button {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.recipe {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  line-height: 2;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  border-left: 6px solid darkgreen;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(100, 100, 100);
+  font-size: 13px;
 }
