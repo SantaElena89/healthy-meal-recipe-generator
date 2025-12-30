@@ -17,15 +17,17 @@
             <h1>AI Healthy Meal Recipe Generator</h1>
         </header>
         <main>
-            <form id="recipe-form">
-                <input type="text" placeholder="Enter the main ingredient(-s)..." autofocus required autocomplete="off"
-                    class="instructions" />
-
-                <input class="submit-button" type="submit" value="Get Recipe" />
-            </form>
-            <div class="recipe" id="recipe-result">Cooking your recipe...👩‍🍳</div>
-            <br />
+            <div class="form-container">
+                <form id="recipe-form">
+                    <input type="text" placeholder="Enter the main ingredient(-s)..." autofocus required
+                        autocomplete="off" class="instructions" id="instructions" />
+                    <input class="submit-button" type="submit" value="Get Recipe" />
+                </form>
+                <div class="hint">e.g., chicken, broccoli, quinoa</div>
+            </div>
+            <div class="recipe hidden" id="recipe"></div>
         </main>
+
         <footer>
             This AI project is coded by <a href="https://github.com/SantaElena89" target="_blank">Elena Sozontova</a>
             and is
